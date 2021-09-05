@@ -13,7 +13,7 @@ The seeder can take a while because of the creation of a huge posts table ( 150M
 
 ## hasMany tip ( route : /hasmany ) 
 
-This tip is a reply on a question posted on Twitter regarding the fantastic 🔥 performance 🔥 tip by Laravel daily ( https://www.youtube.com/watch?v=JOnXX-N96NE )
+This tip is a reply on a question posted on Twitter regarding the fantastic 🔥 performance🔥 tip by Laravel daily ( https://www.youtube.com/watch?v=JOnXX-N96NE )
 
 I replied that retreiving only one field ( for example id ) will make the whereHas query faster, this is particulary the case on big tables, with a lot of columns and data.  This tip uses a posts table with 100 000 records and a lot of text data, the table is 150MB big.
 
