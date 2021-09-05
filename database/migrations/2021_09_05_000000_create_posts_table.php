@@ -18,6 +18,14 @@ class CreatePostsTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('category_id');
             $table->text('content');
+            $table->text('content2');
+            $table->text('content3');
+            $table->text('content4');
+            $table->text('content5');
+            $table->text('content6');
+            $table->text('content7');
+            $table->text('content8');
+            $table->text('content9');
             $table->timestamps();
         });
     }

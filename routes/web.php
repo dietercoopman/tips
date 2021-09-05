@@ -28,8 +28,6 @@ Route::get('/hasmany', function () {
     $users = User::whereHas('posts', function ($q) {
         $q->where('category_id', 1);
     })->get();
-    ray($users->count());
-
 
     /**
      * if you are working on a huge table ( lot of columns , lot of data )
@@ -38,7 +36,6 @@ Route::get('/hasmany', function () {
     $users = User::whereHas('posts', function ($q) {
         $q->select('id')->where('category_id', 1);
     })->get();
-    ray($users->count());
 
     /**
      * for performance reason a join can be a better solution
@@ -48,6 +45,5 @@ Route::get('/hasmany', function () {
         ->where('posts.category_id', 1)
         ->distinct()
         ->get();
-    ray($users->count());
 
 });

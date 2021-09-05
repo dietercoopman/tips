@@ -25,7 +25,15 @@ class PostFactory extends Factory
         return [
             'user_id'     => User::all()->first(),
             'category_id' => rand(1,2),
-            'content'     => $this->faker->paragraph()
+            'content'     => $this->faker->paragraph(),
+            'content2'     => $this->faker->paragraph(),
+            'content3'     => $this->faker->paragraph(),
+            'content4'     => $this->faker->paragraph(),
+            'content5'     => $this->faker->paragraph(),
+            'content6'     => $this->faker->paragraph(),
+            'content7'     => $this->faker->paragraph(),
+            'content8'     => $this->faker->paragraph(),
+            'content9'     => $this->faker->paragraph()
         ];
     }
 
